@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Office of Devansh Shah | devansh.ca</title>
+    <link rel="canonical" href="https://devansh.ca/work.html">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html" class="active">Work</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="shop.html">Shop</a>
+    </nav>
+    
+    <main>
+        <section class="content work-experience">
+            <div class="job">
+                <h2 class="job-header">Office of Devansh Shah</h2>
+                <div class="job-content">
+                    <p class="job-date">2024 - currently</p>
+                    <div class="job-description">
+                        <p>namesake studio</p>
+                        <p>focussing on independent design and production</p>
+                        <p>leaning heavily on 3D printing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job">
+                <h2 class="job-header">Director @ Stackabl</h2>
+                <div class="job-content">
+                    <p class="job-date">2023 - 2024</p>
+                    <div class="job-description">
+                        <p>spun felt collection product line from Stacklab into its own business</p>
+                        <p>managed all aspects of the business: design, engineering, product, operations, strategy, and sales</p>
+                        <p>Exhibited at NYC Design Week, Design Miami, Milan Design Week</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job">
+                <h2 class="job-header">R & D Associate @ Stacklab</h2>
+                <div class="job-content">
+                    <p class="job-date">2021 - 2022</p>
+                    <div class="job-description">
+                        <p>engineering specialist working with designers and architects</p>
+                        <p>built grant system resulting in $100k annually recurring funding</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Job dropdown functionality
+            const jobHeaders = document.querySelectorAll('.job-header');
+            
+            jobHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    content.classList.toggle('expanded');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
